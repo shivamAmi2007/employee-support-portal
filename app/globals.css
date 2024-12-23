@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+  
+  
+}
+
+/* body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+} */
+
+
+/* Header Styles */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: right;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+header button:hover {
+  text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #495057;
+}
+
+/* Form Styles */
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Ticket Card Styles */
+.ticket-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+}
+
+.ticket-card p {
+  margin: 0;
+  min-width: 33%;
+}
+
+.ticket-card button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  /* width: 33%; */
+}
+
+/* Create Ticket Styles */
+.container select, .container textarea {
+  margin-bottom: 1.5rem;
+}
+
+/* Ticket Detail Page Styles */
+.container .ticket-details {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+/* Footer Styles (if needed in the future) */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #343a40;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+/* Welcome Page CSS */
+
+.welcome-container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  min-height: 100vh;
+  background: url('../public/images/welcome-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+
+.welcome-header h1 {
+  font-size: 2.5rem;
+  color: #d7e3e6;
+  text-shadow: 0 0 10px #dfebee, 0 0 20px #e3ecee;
+}
+
+.welcome-header p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.welcome-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-footer {
+  margin-top: 2rem;
+}
+
+.login-button {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background: #0056b3;
+}
+
